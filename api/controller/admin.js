@@ -23,7 +23,7 @@ exports.admin_signup = (req, res, next) => {
                             _id: new mongoose.Types.ObjectId(),
                             email: req.body.email,
                             password: hash,
-                            token: toke
+                            token: token
                         })
                         admin
                             .save()
